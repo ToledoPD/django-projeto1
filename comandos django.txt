@@ -1,0 +1,9 @@
+Funcionalidades do django
+django-admin --help
+
+Criando projeto django:
+django-admin startproject projeto . (Projeto o nome da pasta e o ponto final para que crie
+dentro do diretorio
+
+python mange.py runserver:
+subir o servidor de testes do django
