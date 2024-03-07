@@ -1,5 +1,5 @@
 from django.urls import path
-from recipes.views import home, sobre, receita, contato
+from recipes.views import home
 
 
 #(Cliente) HTTP Request <- HTTP Response (Servidor)
@@ -11,7 +11,4 @@ from recipes.views import home, sobre, receita, contato
 
 urlpatterns = [
     path('', home),
-    path('sobre/', sobre),
-    path('receita/', receita),
-    path('contato/', contato),
 ]
