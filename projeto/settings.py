@@ -31,12 +31,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #Apss que ja vem pre instalado com o django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Precisamos informar os apps que nos criamnos
+    'recipes',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,10 @@ ROOT_URLCONF = 'projeto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'base_template',
+            BASE_DIR / 'recipes' / 'templates_temp'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

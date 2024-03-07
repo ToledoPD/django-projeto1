@@ -1,0 +1,16 @@
+urlpatthens = paginas onde seu site é acessado
+path('admin/', myvieew) - myvieew é a função que é chamada na hora que acessa a url
+
+def myvieew(request): request é o cliente requisitando. preciso devolver uma resposta que é dada
+pelo retur HttpResponse()
+para isso preciso importar o pacote pelo djando
+from django.http import HttpResponse.
+
+Apps em django sao uma rota para determinado pagina. (nao preciso ficar colando em urlpathens)
+para criar cada app é necessario dar um comando no console acessando no ambiente virtual.
+segue comando:
+python manage.py startapp nomedoapp
+Com isso ele cria uma nova pasta no projeto chamada  recipes, 
+e dentro dela tem um arquivo chamado view.py onde nela sera criada a função de cada rota dos apps
+que é passada pelo urpatther que fica no arquivo urls.py dentro da pasta do nomeprojeto que foi 
+criado usando o comando python manage.py startproject nomedoprojeto
